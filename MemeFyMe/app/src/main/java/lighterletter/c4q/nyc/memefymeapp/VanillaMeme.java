@@ -4,6 +4,8 @@ import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+
+
 /**
  * Created by Ramona Harrison
  * on 6/1/15.
@@ -20,6 +22,8 @@ public class VanillaMeme extends Meme {
         this.middleText = middleText;
         this.bottomText = bottomText;
     }
+
+
 
 
     public String getTopText() {

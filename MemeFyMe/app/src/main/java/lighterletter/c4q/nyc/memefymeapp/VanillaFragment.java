@@ -3,7 +3,7 @@ package lighterletter.c4q.nyc.memefymeapp;
 import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -15,7 +15,6 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import java.io.File;
 import java.io.IOException;
 
 
@@ -50,6 +49,8 @@ public class VanillaFragment extends Fragment {
     private Button saveButton;
 
     private OnFragmentInteractionListener mListener;
+
+
 
     /**
      * Use this factory method to create a new instance of
@@ -115,6 +116,18 @@ public class VanillaFragment extends Fragment {
         topTextView.setText(topText);
         middleTextView.setText(middleText);
         bottomTextView.setText(bottomText);
+
+        //Set impact font for editTexts (addition of shadow in styles folder)
+        Typeface topImpact = Typeface.createFromAsset(topTextView.getContext().getAssets(), "Impact.ttf");
+        topTextView.setTypeface(topImpact);
+
+        Typeface middleImpact = Typeface.createFromAsset(middleTextView.getContext().getAssets(), "Impact.ttf");
+        middleTextView.setTypeface(middleImpact);
+
+        Typeface bottomImpact = Typeface.createFromAsset(bottomTextView.getContext().getAssets(), "Impact.ttf");
+        bottomTextView.setTypeface(bottomImpact);
+
+
 
         // Set up image to be edited
 

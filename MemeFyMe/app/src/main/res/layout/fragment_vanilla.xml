@@ -46,7 +46,8 @@
                 android:gravity="center"
                 android:textColor="@android:color/white"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/topText" />
+                android:id="@+id/topText"
+                style="@style/AudioFileInfoOverlayText"/>
 
             <EditText
                 android:layout_width="fill_parent"
@@ -57,7 +58,8 @@
                 android:inputType="textMultiLine"
                 android:textColor="@android:color/white"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/middleText" />
+                android:id="@+id/middleText"
+                style="@style/AudioFileInfoOverlayText"/>
 
             <EditText
                 android:layout_width="fill_parent"
@@ -69,7 +71,8 @@
                 android:inputType="textMultiLine"
                 android:textColor="@android:color/white"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/bottomText" />
+                android:id="@+id/bottomText"
+                style="@style/AudioFileInfoOverlayText"/>
         </LinearLayout>
 
     </FrameLayout>
